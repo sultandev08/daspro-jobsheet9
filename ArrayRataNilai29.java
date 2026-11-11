@@ -14,8 +14,18 @@ public class ArrayRataNilai29{
         }
 
         rata2 = (double) total / nilaiMhs.length;
+        String predikat;
+        if (rata2 >= 85) {
+            predikat = "SANGAT BAIK";
+        } else if (rata2 >= 70) {
+            predikat = "BAIK";
+        } else {
+            predikat = "PERLU PENDAMPINGAN";
+        }
+
         System.out.println("Total nilai: " + total);
         System.out.println("Rata-rata: " + rata2);
+        System.out.println("Predikat kelas: " + predikat);
 
         int tertinggi = nilaiMhs[0];
         int terendah = nilaiMhs[0];
